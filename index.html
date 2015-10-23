@@ -22,26 +22,43 @@ header{
 }
 section{
     width:100%;
-    height:50vh;
+    height:80vh;
     background-color:#acc9d1;
 }
 footer{
      width:100%;
      height:20vh;
      background-color:yellowgreen;
+    text-align: left;
 }
     
-header div#name{
-    font-size:4em; 
-    margin:auto;
+header div h1{
+    width: 100%;
+    font-size: 4em; 
+    margin:0;
 }
-  
-#flex{
-margin:0;
-display-flex;
-flex-direction: row ;
+
+header div p{
+    width: 100%;
+     
+    margin:0;
 }
+ #box{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content: center;
+ }
+
+.item{
+ width:100%; 
+font-size:1.5em;
+}
+ 
+
+    
 </style>
+
 
 
 
@@ -49,21 +66,41 @@ flex-direction: row ;
 </head>
 <body>
     <header>
-       <div id="name">Saikrishnam</div>   
+       <div id="name">
+           <h1>Saikrishnam</h1> 
+            <p>Graduate Student @SantaClara Universty | Web                    Developer 
+            </p>
+         
+         
+        </div>
+          
     </header>
    <section>
-       <div>
-           <ul id="flex">
-               <li class="flexItem">Email</li>
-               <li class="flexItem">Contact</li>
-               <li class="flexItem">Github</li>
-           </ul>
-           
-       </div>
+       
+        
+       
        
    </section>
     <footer>
-        <span>footer</span>
+           <div id="box">
+               
+               <div class="item">Email   
+                   <b>sairaju623@gmail.com</b>             
+               </div>
+               <div class="item">Contact
+                    <a href="tel:408-896-4893">Call me</a>
+               </div>
+               <div class="item">
+                     <a href="https://github.com/SaiKrishnam">
+                         Git
+                     </a>
+               </div>
+               <div class="item">
+                   <a href="https://www.linkedin.com/in/saikrishnamnadimpalli">LinkedIn</a>                  
+               </div>
+               
+           </div>
+           
     </footer>
     
     
