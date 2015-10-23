@@ -16,8 +16,6 @@ body{
 }
   
 header{
-    display: flex;
-    justify-content: center;
     height:20vh; 
     width:100%;
     background-color: tomato;
@@ -30,18 +28,19 @@ section{
 footer{
      width:100%;
      height:20vh;
-    background-color: cornsilk;
+     background-color:yellowgreen;
 }
     
 header div#name{
-    
-    top:50%;
-    left:50%;
     font-size:400%; 
     margin:auto;
-
 }
-    
+  
+#flex{
+margin:0;
+ display-flex;
+flex-direction: row ;
+}
 </style>
 
 
@@ -53,11 +52,17 @@ header div#name{
        <div id="name">Saikrishnam</div>   
     </header>
    <section>
-       <span>Hey</span>
+       <div>
+           <ul id="flex">
+               <li class="flexItem">Email</li>
+               <li class="flexItem">Contact</li>
+               <li class="flexItem">Github</li>
+           </ul>
+           
+       </div>
        
    </section>
     <footer>
-        
         <span>footer</span>
     </footer>
     
