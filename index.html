@@ -5,12 +5,38 @@
     <title>Saikrishnam</title>
 
 <style>  
+body{
+ margin:0;   
+}
 header{
- width:100%;
- height:25%;
+margin: 0 auto;
+width:100%;
+height:200px;
 background-color: burlywood;
 }
+header div#name{
+background-color: gainsboro;
+text-align: center;
+margin:0 auto;
+line-height:200px;
+font-size:40px;
+}
+header div#contactInfo{
+display:flex;
+flex-direction: row;
+background-color: bisque;
+}
+        
+@media only screen and (max-width:400px){
+ header div#name{
+  font-size:400%;   
+ }
+body{
+ font-size:16px;
+ line-height:1.2;
+}
     
+
 </style>
 
 
@@ -18,7 +44,15 @@ background-color: burlywood;
 
 </head>
 <body>
-    <header>Saikrishnam Raju.....</header>
+    <header>
+       <div id="name">Saikrishnam</div> 
+        <div id="contactInfo">
+            <span>Contact</span>
+            <span>Email</span>
+        <div>
+        
+        
+    </header>
     
     
 </body>
